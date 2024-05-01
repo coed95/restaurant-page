@@ -12,7 +12,7 @@ export const Website = {
         content.appendChild(this.createMain());
 
         setActiveButton(document.querySelector(".button"));
-        load("home");
+        this.load("home");
     },
 
     createHeader: function() {
