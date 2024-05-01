@@ -16,3 +16,6 @@ body .menu-item {
     transition: background-color 0.3s;
 }
 
+body .menu-item p {
+    font-size: 1.2rem;
+}
