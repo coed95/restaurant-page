@@ -2,7 +2,7 @@ export function handleButtonClick(button) {
     if (button.classList.contains("active")) {
         return;
     }
-    setActive(button);
+    setActiveButton(button);
 }
 
 export function setActiveButton(button) {
