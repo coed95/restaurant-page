@@ -1,4 +1,4 @@
-import Chef from "./assets/images/chef.jpg";
+import Chef from "./assets/images/chef.png";
 
 import { addFood, getMenu } from "./menu.js";
 import { handleButtonClick,
