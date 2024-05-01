@@ -39,31 +39,6 @@ body {
     background-size: cover;
 }
 
-body .content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-body .header {
-    align-items: center;
-    background-color: var(--background-red);
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    width: 100%;
-}
-
-body .restaurant-name {
-    font-family: 'Edo SZ';
-    font-size: 5rem;
-    letter-spacing: 0.4rem;
-    margin-bottom: 1rem;
-}
-
 button {
     border-style: none;
     border-bottom-style: none;
@@ -88,77 +63,4 @@ button {
 
 .button:active {
     border-bottom: 2px solid var(--font-color);
-}
-
-body .main {
-    background-color: var(--background-light);
-    border: 1px solid var(--border-color);
-    font-size: 2rem;
-    margin: 6rem 0;
-    max-width: 700px;
-    padding: 4rem;
-    display: flex;
-    justify-content: center;
-}
-
-body .home {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: fadeIn 1.5s;
-    height: 500px;
-    width: 600px;
-}
-
-body .home p {
-    padding: 1rem;
-}
-
-body .home img {
-    border-radius: 50%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    opacity: 90%;
-    width: 50%;
-}
-
-body .menu {
-    animation: fadeIn 1.3s;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4rem;
-}
-
-body .menu-item {
-    align-items: center;
-    background-color: var(--background-light);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: center;
-    padding: 4rem;
-    transition: background-color 0.3s;
-}
-
-body .contact {
-    align-items: center;
-    animation: fadeIn 1.5s;
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    justify-content: center;
-    width: 600px;
-}
-
-body .contact p {
-    padding: 1rem;
-    width: 100%;
-}
-
-body .contact img {
-    max-height: 420px;
-    opacity: 90%;
-    padding: 1rem;
 }
