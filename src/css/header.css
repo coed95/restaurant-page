@@ -1,0 +1,17 @@
+body .header {
+    align-items: center;
+    background-color: var(--background-red);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+body .header .restaurant-name {
+    font-family: 'Edo SZ';
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
+}
