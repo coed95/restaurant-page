@@ -12,14 +12,14 @@
     font-family: 'Edo SZ';
     font-style: normal;
     font-weight: normal;
-    src: url('./assets/fonts/edo-sz.ttf') format('truetype');
+    src: url('../assets/fonts/edo-sz.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'FF Meta';
     font-style: normal;
     font-weight: normal;
-    src: url('./assets/fonts/meta-normal.ttf') format('truetype');
+    src: url('../assets/fonts/meta-normal.ttf') format('truetype');
 }
 
 *,
@@ -34,7 +34,7 @@ body {
     font-family: 'FF Meta';
     font-size: 1.6rem;
     color: var(--font-color);
-    background-image: url('./assets/images/background.jpg');
+    background-image: url('../assets/images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
