@@ -11,8 +11,8 @@ body .menu-item {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 300px;
     justify-content: center;
     padding: 4rem;
     transition: background-color 0.3s;
 }
+
