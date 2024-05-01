@@ -5,17 +5,17 @@ import { handleButtonClick,
          setActiveButton } from "./buttonUtils.js";
 
 export const Website = {
-    createContent: () => {
+    createContent: function() {
         const content = document.getElementById("content");
 
-        content.appendChild(createHeader());
-        content.appendChild(createMain());
+        content.appendChild(this.createHeader());
+        content.appendChild(this.createMain());
 
         setActiveButton(document.querySelector(".button"));
         load("home");
     },
 
-    createHeader: () => {
+    createHeader: function() {
         const header = document.createElement("header");
         header.classList.add("header");
 
@@ -25,25 +25,25 @@ export const Website = {
 
         const nav = document.createElement("nav");
 
-        const home = createButton("Home");
+        const home = this.createButton("Home");
 
         home.addEventListener("click", () => {
             handleButtonClick(home);
-            load("home");
+            this.load("home");
         });
 
-        const menu = createButton("Menu");
+        const menu = this.createButton("Menu");
 
         menu.addEventListener("click", () => {
             handleButtonClick(menu);
-            load("menu");
+            this.load("menu");
         });
 
-        const contact = createButton("Contact");
+        const contact = this.createButton("Contact");
 
         contact.addEventListener("click", () => {
             handleButtonClick(contact);
-            load("contact");
+            this.load("contact");
         });
 
         nav.appendChild(home);
@@ -56,7 +56,7 @@ export const Website = {
         return header;
     },
 
-    createMain: () => {
+    createMain: function() {
         const main = document.createElement("main");
 
         main.classList.add("main");
@@ -65,7 +65,7 @@ export const Website = {
         return main;
     },
 
-    createButton: (buttonName) => {
+    createButton: function(buttonName) {
         const button = document.createElement("button");
         button.classList.add("button");
         button.textContent = buttonName;
@@ -73,14 +73,14 @@ export const Website = {
         return button;
     },
 
-    createParagraph: (text) => {
+    createParagraph: function(text) {
         const paragraph = document.createElement('p');
         paragraph.textContent = text;
 
         return paragraph;
     },
 
-    createHome: () => {
+    createHome: function() {
         const home = document.createElement("div");
         home.classList.add("home");
 
@@ -88,15 +88,15 @@ export const Website = {
         image.src = Chef;
         image.alt = "Chef";
 
-        home.appendChild(createParagraph("Sushi Bar"));
-        home.appendChild(createParagraph("Known for fresh fish"));
+        home.appendChild(this.createParagraph("Sushi Bar"));
+        home.appendChild(this.createParagraph("Known for fresh fish"));
         home.appendChild(image);
-        home.appendChild("Come visit us!");
+        home.appendChild(this.createParagraph("Come visit us!"));
 
         return home;
     },
 
-    createMenu: () => {
+    createMenu: function() {
         const menu = document.createElement("div");
         menu.classList.add("menu");
 
@@ -110,12 +110,12 @@ export const Website = {
         return menu;
     },
 
-    createContact: () => {
+    createContact: function() {
         const contact = document.createElement("div");
         contact.classList.add("contact");
 
-        const phone = createParagraph("📞 03-1234-5678");
-        const address = createParagraph("🏠 Kamurocho, West Showa St.");
+        const phone = this.createParagraph("📞 03-1234-5678");
+        const address = this.createParagraph("🏠 Kamurocho, West Showa St.");
         const location = new Image();
 
         location.src = "./assets/images/location.png";
@@ -128,21 +128,21 @@ export const Website = {
         return contact;
     },
 
-    load: (contentName) => {
+    load: function(contentName) {
         const main = document.getElementById("main");
         main.textContent = "";
     
         switch (contentName) {
             case "home":
-                main.appendChild(createHome());
+                main.appendChild(this.createHome());
                 break;
     
             case "menu":
-                main.appendChild(createMenu());
+                main.appendChild(this.createMenu());
                 break;
     
             case "contact":
-                main.appendChild(createContact());
+                main.appendChild(this.createContact());
                 break;
         }
     },
