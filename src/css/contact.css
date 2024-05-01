@@ -1,0 +1,20 @@
+body .contact {
+    align-items: center;
+    animation: fadeIn 1.5s;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    width: 600px;
+}
+
+body .contact p {
+    padding: 1rem;
+    width: 100%;
+}
+
+body .contact img {
+    max-height: 420px;
+    opacity: 90%;
+    padding: 1rem;
+}
