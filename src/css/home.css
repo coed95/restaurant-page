@@ -1,0 +1,21 @@
+body .home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1.5s;
+    height: 500px;
+    width: 600px;
+}
+
+body .home p {
+    padding: 1rem;
+}
+
+body .home img {
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 90%;
+    width: 50%;
+}
