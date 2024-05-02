@@ -9,7 +9,7 @@ export function addFood(name, description) {
     foodDescription.textContent = description;
 
     const foodImage = new Image();
-    foodImage.src = `./assets/images/sushi/${name.toLowerCase()}.png`;
+    foodImage.src = `../src/assets/images/sushi/${name.toLowerCase()}.png`;
     foodImage.alt = `${name}`;
 
     menuItem.appendChild(foodImage);
