@@ -11,7 +11,7 @@ body .menu-item {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 360px;
+    height: 370px;
     justify-content: space-between;
     padding: 3.5rem;
     transition: background-color 0.3s;
