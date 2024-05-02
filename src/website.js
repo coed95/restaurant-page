@@ -118,7 +118,7 @@ export const Website = {
         const address = this.createParagraph("🏠 Kamurocho, West Showa St.");
         const location = new Image();
 
-        location.src = "./assets/images/location.png";
+        location.src = "../src/assets/images/location.png";
         location.alt = "Location";
 
         contact.appendChild(phone);
