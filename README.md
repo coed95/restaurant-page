@@ -1,6 +1,6 @@
 # Restaurant Page
 
-### This is a Restaurant Web Page for a fictional place of Yakuza 0 named Sushi Gin.
+### This is a restaurant webpage for a fictional establishment featured in Yakuza 0 called Sushi Gin.
 
 This was part of The Odin Project JavaScript Assignment.
 Its aim was to make a functional multi page website using Webpack to bundle files.
