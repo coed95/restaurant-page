@@ -1,4 +1,5 @@
 import Chef from "./assets/images/chef.png";
+import Location from "./assets/images/location.png";
 
 import { addFood, getMenu } from "./menu.js";
 import { handleButtonClick,
@@ -118,7 +119,7 @@ export const Website = {
         const address = this.createParagraph("🏠 Kamurocho, West Showa St.");
         const location = new Image();
 
-        location.src = "../src/assets/images/location.png";
+        location.src = Location;
         location.alt = "Location";
 
         contact.appendChild(phone);
